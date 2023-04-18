@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+var miniVan_1 = require("./miniVan");
+var batMobile_1 = require("./batMobile");
+var tucTuc_1 = require("./tucTuc");
+var vehicleConvoy_1 = require("./vehicleConvoy");
+var batMobile = new batMobile_1.BatMobile("12A", 50, false);
+var miniVan = new miniVan_1.MiniVan("10B", 30, 12, 2);
+var tuctuc = new tucTuc_1.TucTuc("2C", 100, 20);
+var vehicleConvoy = new vehicleConvoy_1.VehicleConvoy();
+vehicleConvoy.addVehicle(batMobile);
+vehicleConvoy.addVehicle(miniVan);
+vehicleConvoy.addVehicle(tuctuc);
+// console.log(batMobile .getSpeed());
+// console.log(miniVan.getSpeed());
+// console.log(tuctuc.getSpeed());
+console.log(vehicleConvoy.getMaxSpeed());
